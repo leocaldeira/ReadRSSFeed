@@ -13,12 +13,12 @@ namespace ReadRSSFeed.Controllers
 {
     public class FeedController : Controller
     {
-        public ActionResult Index()
+        /*public ActionResult Index()
         {
             return View(new List<Feed>());
         }
-        [HttpPost]
-        public ActionResult Index(string RSSURL)
+        [HttpPost]*/
+        public ActionResult Index(string RSSURL = "http://deen.com.br/blog/feed/")
         {
             WebClient wclient = new WebClient();
             //string RSSData = wclient.DownloadString(RSSURL);
